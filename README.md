@@ -1,71 +1,116 @@
-## Table of Contents
-- [Features](#features)
-- [Screenshot](#screenshot)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Files Included](#files-included)
-- [GitHub](#github)
-- [License](#license)
+RAT Downloader
 
-**RAT Downloader** is a Python-based tool designed strictly for educational purposes. It allows you to remotely interact with files on a target machine via Telegram.  
+RAT Downloader is a Python-based tool designed strictly for educational purposes.
+It allows you to remotely interact with files on a target machine via Telegram.
 
-Features include:
+⚠️ WARNING: This tool is intended strictly for educational purposes and authorized testing only.
+You are solely responsible for any use of this software. Do not use this on systems without explicit permission.
+The author assumes no liability for misuse.
 
-- Download and upload files
-- Browse directories
-- View Chrome browser history
-- Execute commands remotely
+Table of Contents
 
-⚠️ **WARNING:** This tool is intended **strictly for educational purposes and authorized testing only**. You are solely responsible for any use of this software. Do **not** use this on systems without explicit permission. The author assumes **no liability for misuse**.  
+Features
 
-## Requirements
+Flow Diagram
 
-- Python 3.8 or higher
-- Telegram bot token
-- Telegram chat ID
-- Internet connection
+Requirements
+
+Installation
+
+Usage
+
+Commands
+
+Files Included
+
+GitHub
+
+License
+
+Features
+
+Download and upload files
+
+Browse directories
+
+View Chrome browser history
+
+Execute commands remotely
+
+Flow Diagram
++-------------------+
+|   User (Telegram) |
++---------+---------+
+          |
+          v
++-------------------+
+|  Telegram Bot API |
++---------+---------+
+          |
+          v
++-------------------+
+|   RAT Downloader  |
+|   (main.py)       |
++-------------------+
+          |
+          v
++-------------------+
+| Target Machine FS |
+| Commands / Files  |
++-------------------+
+
+Requirements
+
+Python 3.8 or higher
+
+Telegram bot token
+
+Telegram chat ID
+
+Internet connection
 
 Python dependencies:
 
-```bash
 pip install -r requirements.txt
-Requirements file should include:
+
+
+requirements.txt should include:
+
 requests
 
 
 Make sure your config.py file contains:
+
 BOT_TOKEN = "YOUR_BOT_TOKEN"
 CHAT_ID = "YOUR_CHAT_ID"
 API_URL = "https://api.telegram.org/bot" + BOT_TOKEN + "/"
-Files
-main.py → Main bot script
 
-config.py → Telegram bot configuration
+Installation
 
-requirements.txt → Python dependencies
-
-Usage
 Clone the repository:
-
 
 git clone https://github.com/cmdkill3r/RAT-Downloader.git
 cd RAT-Downloader
+
+
 Install dependencies:
 
-
 pip install -r requirements.txt
+
+
 Configure your bot credentials in config.py.
+
+Usage
 
 Run the bot:
 
-
 python main.py
-After a 5-minute boot delay, the bot will start. Interact with it by sending commands via Telegram.
+
+
+After a ~5-minute boot delay, the bot will start.
+Interact with it by sending commands via Telegram.
 
 Commands
-Once the bot is running, you can control it remotely via Telegram messages:
-
 Command	Description
 pwd	Show current working directory
 ls	List files and folders
@@ -82,15 +127,21 @@ head <file> [n]	Show first n lines of a file
 tail <file> [n]	Show last n lines of a file
 history chrome	Retrieve last 12h of Chrome browser history
 exit	Shut down bot
+Files Included
 
-Legal & Educational Notice
-This tool is strictly educational. Using it on computers without explicit authorization is illegal and may result in criminal and civil penalties.
+main.py → Main bot script
 
-By using this software, you acknowledge that you understand the risks and assume full responsibility for its use.
+config.py → Telegram bot configuration
+
+requirements.txt → Python dependencies
+
+GitHub
+
+For updates, issues, and more tools, visit: cmdkill3r
 
 License
-This project is licensed under the MIT License.
 
+This project is licensed under the MIT License.
 
 MIT License
 
@@ -113,7 +164,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-Author
-GitHub: cmdkill3r
 
-Educational purposes only
+
+⚠️ Disclaimer: This tool is strictly for educational purposes only.
+The author assumes no responsibility for misuse.
