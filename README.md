@@ -1,5 +1,3 @@
-# RAT Downloader
-
 ## Overview
 
 **RAT Downloader** is a Python-based tool designed strictly for educational purposes. It allows you to remotely interact with files on a target machine via Telegram.  
@@ -25,14 +23,12 @@ Python dependencies:
 ```bash
 pip install -r requirements.txt
 Requirements file should include:
-
-nginx
-Copy code
 requests
-Make sure your config.py file contains:
 
+
+Make sure your config.py file contains:
 python
-Copy code
+
 BOT_TOKEN = "YOUR_BOT_TOKEN"
 CHAT_ID = "YOUR_CHAT_ID"
 API_URL = "https://api.telegram.org/bot" + BOT_TOKEN + "/"
@@ -46,21 +42,18 @@ requirements.txt → Python dependencies
 Usage
 Clone the repository:
 
-bash
-Copy code
+
 git clone https://github.com/cmdkill3r/RAT-Downloader.git
 cd RAT-Downloader
 Install dependencies:
 
-bash
-Copy code
+
 pip install -r requirements.txt
 Configure your bot credentials in config.py.
 
 Run the bot:
 
-bash
-Copy code
+
 python main.py
 After a 5-minute boot delay, the bot will start. Interact with it by sending commands via Telegram.
 
@@ -91,9 +84,6 @@ By using this software, you acknowledge that you understand the risks and assume
 
 License
 This project is licensed under the MIT License.
-
-sql
-Copy code
 MIT License
 
 Copyright (c) 2025 cmdkill3r
