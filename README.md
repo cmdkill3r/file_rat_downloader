@@ -1,29 +1,34 @@
-Overview
-RAT Downloader is a Python-based tool designed strictly for educational purposes. It allows remote interaction with files on a target machine via Telegram.
+RAT Downloader
 
-⚠️ WARNING: This tool is intended strictly for educational purposes and authorized testing only. Do not use this on systems without explicit permission. You are solely responsible for any misuse.
+RAT Downloader is a Python-based tool for educational purposes only.
+It lets you interact remotely with files on a target machine via Telegram.
 
-Features
+⚠️ WARNING: This tool is for educational and authorized testing only.
+Do not use on systems without permission. Misuse is your responsibility.
 
-Download and upload files
+🛠 Features
 
 Browse directories
 
-View Chrome browser history
+Download and upload files
 
 Execute commands remotely
 
-Requirements
+View Chrome browser history
+
+📦 Requirements
+
+System Requirements:
 
 Python 3.8+
+
+Internet connection
 
 Telegram bot token
 
 Telegram chat ID
 
-Internet connection
-
-Python dependencies:
+Python Dependencies:
 
 pip install -r requirements.txt
 
@@ -33,23 +38,20 @@ requirements.txt should include:
 requests
 
 
-Your config.py should contain:
+Configuration (config.py):
 
 BOT_TOKEN = "YOUR_BOT_TOKEN"
 CHAT_ID = "YOUR_CHAT_ID"
 API_URL = "https://api.telegram.org/bot" + BOT_TOKEN + "/"
 
-Files
+🗂 File Structure
+File	Description
+main.py	Main bot script
+config.py	Telegram bot configuration
+requirements.txt	Python dependencies
+🚀 Usage
 
-main.py → Main bot script
-
-config.py → Telegram bot configuration
-
-requirements.txt → Python dependencies
-
-Usage
-
-Clone the repository:
+Clone repository:
 
 git clone https://github.com/cmdkill3r/RAT-Downloader.git
 cd RAT-Downloader
@@ -60,18 +62,19 @@ Install dependencies:
 pip install -r requirements.txt
 
 
-Configure your bot credentials in config.py.
+Configure your bot in config.py.
 
 Run the bot:
 
 python main.py
 
 
-After a 5-minute boot delay, the bot will start. Interact with it by sending commands via Telegram.
+After ~5 minutes boot delay, the bot will start.
+Interact via Telegram commands.
 
-Commands
+📜 Commands
 Command	Description
-pwd	Show current working directory
+pwd	Show current directory
 ls	List files and folders
 cd <dir>	Change directory
 upload <file>	Upload file to Telegram
@@ -82,42 +85,23 @@ rm <file>	Delete file
 mkdir <folder>	Create folder
 run/exec <file>	Execute file
 cat <file>	Show first 4k characters of a file
-head <file> [n]	Show first n lines of a file
-tail <file> [n]	Show last n lines of a file
+head <file> [n]	Show first n lines
+tail <file> [n]	Show last n lines
 history chrome	Retrieve last 12h of Chrome history
 exit	Shut down bot
-Legal & Educational Notice
+⚖️ Legal & Educational Notice
 
-This tool is strictly educational. Using it on computers without explicit authorization is illegal and may result in criminal and civil penalties.
+This tool is strictly educational. Using it on computers without explicit permission is illegal.
+You are fully responsible for your actions.
 
-By using this software, you acknowledge that you understand the risks and assume full responsibility for its use.
+📝 License
 
-License
+MIT License (2025) — cmdkill3r
 
-This project is licensed under the MIT License.
+Permission is hereby granted, free of charge, to any person obtaining a copy...
+[Full license text here]
 
-MIT License
-
-Copyright (c) 2025 cmdkill3r
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-Author
+👤 Author
 
 GitHub: cmdkill3r
 
