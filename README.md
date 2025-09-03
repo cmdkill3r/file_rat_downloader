@@ -10,22 +10,14 @@ The author assumes no liability for misuse.
 Table of Contents
 
 Features
-
-Flow Diagram
-
-Requirements
-
-Installation
-
-Usage
-
-Commands
-
-Files Included
-
-GitHub
-
-License
+ - Flow Diagram
+ - Requirements
+ - Installation
+ - Usage
+ - Commands
+ - Files Included
+ - GitHub
+ - License
 
 Features
 
@@ -79,7 +71,7 @@ requirements.txt should include:
 requests
 
 
-Make sure your config.py file contains:
+Your config.py should contain:
 
 BOT_TOKEN = "YOUR_BOT_TOKEN"
 CHAT_ID = "YOUR_CHAT_ID"
@@ -107,7 +99,7 @@ Run the bot:
 python main.py
 
 
-After a ~5-minute boot delay, the bot will start.
+⏱ After a ~5-minute boot delay, the bot will start.
 Interact with it by sending commands via Telegram.
 
 Commands
@@ -127,6 +119,9 @@ head <file> [n]	Show first n lines of a file
 tail <file> [n]	Show last n lines of a file
 history chrome	Retrieve last 12h of Chrome browser history
 exit	Shut down bot
+
+⚠️ Warning: Using this tool on unauthorized systems is illegal.
+
 Files Included
 
 main.py → Main bot script
@@ -137,7 +132,7 @@ requirements.txt → Python dependencies
 
 GitHub
 
-For updates, issues, and more tools, visit: cmdkill3r
+For updates, issues, and more tools: cmdkill3r
 
 License
 
