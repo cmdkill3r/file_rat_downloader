@@ -1,25 +1,5 @@
 RAT Downloader
-Table of Contents
-
-Features
-
-Requirements
-
-Installation
-
-Usage
-
-Commands
-
-Files Included
-
-Flow Diagram
-
-GitHub
-
-License
-
-🚀 Features
+ Features
 
 📂 Browse directories remotely
 
