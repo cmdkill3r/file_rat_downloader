@@ -1,57 +1,62 @@
 RAT Downloader
+Table of Contents
 
-RAT Downloader is a Python-based tool for educational purposes only.
-It lets you interact remotely with files on a target machine via Telegram.
+Features
 
-⚠️ WARNING: This tool is for educational and authorized testing only.
-Do not use on systems without permission. Misuse is your responsibility.
+Requirements
 
-🛠 Features
+Installation
 
-Browse directories
+Usage
 
-Download and upload files
+Commands
 
-Execute commands remotely
+Files Included
 
-View Chrome browser history
+Flow Diagram
 
-📦 Requirements
+GitHub
 
-System Requirements:
+License
+
+🚀 Features
+
+📂 Browse directories remotely
+
+⬇️ Upload/download files via Telegram
+
+⚡ Execute commands on the target machine
+
+🌐 View Chrome browser history
+
+🐍 Lightweight Python tool for educational purposes
+
+💡 Note: For educational and authorized testing only. Misuse is your responsibility.
+
+🛠 Requirements
 
 Python 3.8+
-
-Internet connection
 
 Telegram bot token
 
 Telegram chat ID
 
-Python Dependencies:
+Internet connection
+
+Python dependencies:
 
 pip install -r requirements.txt
 
 
-requirements.txt should include:
-
-requests
-
-
-Configuration (config.py):
+config.py should contain:
 
 BOT_TOKEN = "YOUR_BOT_TOKEN"
 CHAT_ID = "YOUR_CHAT_ID"
 API_URL = "https://api.telegram.org/bot" + BOT_TOKEN + "/"
 
-🗂 File Structure
-File	Description
-main.py	Main bot script
-config.py	Telegram bot configuration
-requirements.txt	Python dependencies
-🚀 Usage
+⚙️ Installation
 
-Clone repository:
+Clone the repository:
 
 git clone https://github.com/cmdkill3r/RAT-Downloader.git
 cd RAT-Downloader
@@ -62,17 +67,19 @@ Install dependencies:
 pip install -r requirements.txt
 
 
-Configure your bot in config.py.
+Configure your bot credentials in config.py.
+
+🎮 Usage
 
 Run the bot:
 
 python main.py
 
 
-After ~5 minutes boot delay, the bot will start.
+⏱ After ~5 minutes boot delay, the bot will start.
 Interact via Telegram commands.
 
-📜 Commands
+📝 Commands
 Command	Description
 pwd	Show current directory
 ls	List files and folders
@@ -89,20 +96,42 @@ head <file> [n]	Show first n lines
 tail <file> [n]	Show last n lines
 history chrome	Retrieve last 12h of Chrome history
 exit	Shut down bot
-⚖️ Legal & Educational Notice
 
-This tool is strictly educational. Using it on computers without explicit permission is illegal.
-You are fully responsible for your actions.
+⚠️ Warning: Using this tool on unauthorized systems is illegal.
 
-📝 License
+📂 Files Included
 
-MIT License (2025) — cmdkill3r
+main.py → Main bot script
 
-Permission is hereby granted, free of charge, to any person obtaining a copy...
-[Full license text here]
+config.py → Telegram bot configuration
 
-👤 Author
+requirements.txt → Python dependencies
 
-GitHub: cmdkill3r
+🗺 Flow Diagram
++-------------------+
+|   User (Telegram) |
++---------+---------+
+          |
+          v
++-------------------+
+|  Telegram Bot API |
++---------+---------+
+          |
+          v
++-------------------+
+|   RAT Downloader  |
+|   (main.py)       |
++-------------------+
+          |
+          v
++-------------------+
+| Target Machine FS |
+| Commands / Files  |
++-------------------+
 
-Purpose: Educational only
+
+🔄 Telegram messages control the bot; files and commands flow between the bot and the target machine.
+
+🌐 GitHub
+
+For updates, issues, and more tools: cmdkill3r
