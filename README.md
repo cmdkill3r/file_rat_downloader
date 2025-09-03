@@ -1,5 +1,4 @@
-RAT Downloader
-
+Overview
 RAT Downloader is a Python-based tool designed strictly for educational purposes. It allows remote interaction with files on a target machine via Telegram.
 
 ⚠️ WARNING: This tool is intended strictly for educational purposes and authorized testing only. Do not use this on systems without explicit permission. You are solely responsible for any misuse.
