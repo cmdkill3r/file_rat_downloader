@@ -23,7 +23,8 @@ Python dependencies:
 ```bash
 pip install -r requirements.txt
 Requirements file should include:
-requests
+requests>=2.31.0
+
 
 
 Make sure your config.py file contains:
