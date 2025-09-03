@@ -64,7 +64,7 @@ This repo is completely safe—no real data is affected.
 
 To test the full live functionality in a controlled lab environment, reach out directly:
 
-📬 Contact: GitHub DM
+📬 Contact: [cmdkill3r](https://github.com/cmdkill3r)
 
 The bot behaves exactly like a real remote file manager, perfect for pentesting demos and training.
 
