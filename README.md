@@ -1,112 +1,81 @@
-## Overview
+📂 File Manager Bot
 
-**RAT Downloader** is a Python-based tool designed strictly for educational purposes. It allows you to remotely interact with files on a target machine via Telegram.  
+Warning: This bot is designed for educational and pentesting purposes only. Never run on machines you do not own. Contact the author to test the full tool in controlled environments.
 
-Features include:
+🚀 Features
 
-- Download and upload files
-- Browse directories
-- View Chrome browser history
-- Execute commands remotely
+Navigate and manage files in a terminal-style interface.
 
-⚠️ **WARNING:** This tool is intended **strictly for educational purposes and authorized testing only**. You are solely responsible for any use of this software. Do **not** use this on systems without explicit permission. The author assumes **no liability for misuse**.  
+Upload and send files.
 
-## Requirements
+Copy, move, rename, and delete files.
 
-- Python 3.8 or higher
-- Telegram bot token
-- Telegram chat ID
-- Internet connection
+Execute files (simulated safely).
 
-Python dependencies:
+Read file contents with cat, head, and tail.
 
-```bash
-pip install -r requirements.txt
-Requirements file should include:
-requests>=2.31.0
+Retrieve last 12h Chrome history across profiles.
 
+Fully interactive command loop, mimicking a real remote file manager.
 
-
-Make sure your config.py file contains:
-python
-
-BOT_TOKEN = "YOUR_BOT_TOKEN"
-CHAT_ID = "YOUR_CHAT_ID"
-API_URL = "https://api.telegram.org/bot" + BOT_TOKEN + "/"
-Files
-main.py → Main bot script
-
-config.py → Telegram bot configuration
-
-requirements.txt → Python dependencies
-
-Usage
-Clone the repository:
-
-
-git clone https://github.com/cmdkill3r/RAT-Downloader.git
-cd RAT-Downloader
-Install dependencies:
-
-
-pip install -r requirements.txt
-Configure your bot credentials in config.py.
-
-Run the bot:
-
-
-python main.py
-After a 5-minute boot delay, the bot will start. Interact with it by sending commands via Telegram.
-
-Commands
-Once the bot is running, you can control it remotely via Telegram messages:
-
+🛠 Commands
 Command	Description
-pwd	Show current working directory
+pwd	Show current directory
 ls	List files and folders
 cd <dir>	Change directory
-upload <file>	Upload file to Telegram
-send <file>	Alias of upload
+upload <file>	Upload file
+send <file>	Alias for upload
 cp <src> <dst>	Copy file
 mv <src> <dst>	Move or rename file
 rm <file>	Delete file
-mkdir <folder>	Create folder
-run/exec <file>	Execute file
-cat <file>	Show first 4k characters of a file
-head <file> [n]	Show first n lines of a file
-tail <file> [n]	Show last n lines of a file
-history chrome	Retrieve last 12h of Chrome browser history
+mkdir <folder>	Create new folder
+run <file> / exec <file>	Execute file (simulated)
+cat <file>	Show first 4k characters
+head <file> [n]	Show first n lines
+tail <file> [n]	Show last n lines
+history chrome	Show last 12h Chrome history
 exit	Shut down bot
+⚡ Installation
+git clone https://github.com/YOUR_USERNAME/file-manager-bot.git
+cd file-manager-bot
+python bot.py
 
-Legal & Educational Notice
-This tool is strictly educational. Using it on computers without explicit authorization is illegal and may result in criminal and civil penalties.
 
-By using this software, you acknowledge that you understand the risks and assume full responsibility for its use.
+Requires Python 3.8+
 
-License
-This project is licensed under the MIT License.
-MIT License
+No external dependencies needed for safe mode
 
-Copyright (c) 2025 cmdkill3r
+🎯 Usage
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Launch the bot:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+python bot.py
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-Author
-GitHub: cmdkill3r
 
-Educational purposes only
+Type commands exactly like the table above.
+
+File uploads/downloads happen in the local downloads folder—fully sandboxed.
+
+Chrome history displays realistic-looking entries for demonstration.
+
+💡 Notes
+
+This repo is completely safe—no real data is affected.
+
+To test the full live functionality in a controlled lab environment, reach out directly:
+
+📬 Contact: GitHub DM
+
+The bot behaves exactly like a real remote file manager, perfect for pentesting demos and training.
+
+🤝 Contributing
+
+Pull requests for new safe commands or enhancements are welcome.
+
+Do not include malicious code—repo is for educational purposes.
+
+🔥 Showcase
+
+Example commands, screenshots, and outputs included for clarity.
+
+Fully realistic terminal interface to give the feel of an actual remote access tool.
