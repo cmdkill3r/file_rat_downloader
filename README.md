@@ -1,98 +1,72 @@
-RAT Downloader
+# RAT Downloader
 
-RAT Downloader is a Python-based tool designed strictly for educational purposes.
-It allows you to remotely interact with files on a target machine via Telegram.
+## Overview
 
-⚠️ WARNING: This tool is intended strictly for educational purposes and authorized testing only.
-You are solely responsible for any use of this software.
-Do not use this on systems without explicit permission.
-The author assumes no liability for misuse.
+**RAT Downloader** is a Python-based tool designed strictly for educational purposes. It allows you to remotely interact with files on a target machine via Telegram.  
 
+Features include:
 
-Features
+- Download and upload files
+- Browse directories
+- View Chrome browser history
+- Execute commands remotely
 
-Download and upload files
+⚠️ **WARNING:** This tool is intended **strictly for educational purposes and authorized testing only**. You are solely responsible for any use of this software. Do **not** use this on systems without explicit permission. The author assumes **no liability for misuse**.  
 
-Browse directories
+## Requirements
 
-View Chrome browser history
+- Python 3.8 or higher
+- Telegram bot token
+- Telegram chat ID
+- Internet connection
 
-Execute commands remotely
+Python dependencies:
 
-Flow Diagram
-+-------------------+
-|   User (Telegram) |
-+---------+---------+
-          |
-          v
-+-------------------+
-|  Telegram Bot API |
-+---------+---------+
-          |
-          v
-+-------------------+
-|   RAT Downloader  |
-|   (main.py)       |
-+-------------------+
-          |
-          v
-+-------------------+
-| Target Machine FS |
-| Commands / Files  |
-+-------------------+
-
-Requirements
-
-Python 3.8+
-
-Telegram bot token
-
-Telegram chat ID
-
-Internet connection
-
-Dependencies:
-
+```bash
 pip install -r requirements.txt
+Requirements file should include:
 
-
-requirements.txt should include:
-
+nginx
+Copy code
 requests
+Make sure your config.py file contains:
 
-
-config.py should contain:
-
+python
+Copy code
 BOT_TOKEN = "YOUR_BOT_TOKEN"
 CHAT_ID = "YOUR_CHAT_ID"
 API_URL = "https://api.telegram.org/bot" + BOT_TOKEN + "/"
+Files
+main.py → Main bot script
 
-Installation
+config.py → Telegram bot configuration
 
-Clone the repository:
-
-git clone https://github.com/cmdkill3r/RAT-Downloader.git
-cd RAT-Downloader
-
-
-Install dependencies:
-
-pip install -r requirements.txt
-
-
-Configure your bot credentials in config.py.
+requirements.txt → Python dependencies
 
 Usage
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/cmdkill3r/RAT-Downloader.git
+cd RAT-Downloader
+Install dependencies:
+
+bash
+Copy code
+pip install -r requirements.txt
+Configure your bot credentials in config.py.
 
 Run the bot:
 
+bash
+Copy code
 python main.py
-
-
-⏱ After a ~5-minute boot delay, the bot will start.
-Interact with it by sending commands via Telegram.
+After a 5-minute boot delay, the bot will start. Interact with it by sending commands via Telegram.
 
 Commands
+Once the bot is running, you can control it remotely via Telegram messages:
+
 Command	Description
 pwd	Show current working directory
 ls	List files and folders
@@ -109,14 +83,39 @@ head <file> [n]	Show first n lines of a file
 tail <file> [n]	Show last n lines of a file
 history chrome	Retrieve last 12h of Chrome browser history
 exit	Shut down bot
-Files Included
 
-main.py → Main bot script
+Legal & Educational Notice
+This tool is strictly educational. Using it on computers without explicit authorization is illegal and may result in criminal and civil penalties.
 
-config.py → Telegram bot configuration
+By using this software, you acknowledge that you understand the risks and assume full responsibility for its use.
 
-requirements.txt → Python dependencies
+License
+This project is licensed under the MIT License.
 
-GitHub
+sql
+Copy code
+MIT License
 
-For updates, issues, and more tools: cmdkill3r
+Copyright (c) 2025 cmdkill3r
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+Author
+GitHub: cmdkill3r
+
+Educational purposes only
