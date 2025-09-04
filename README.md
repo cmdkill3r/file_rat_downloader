@@ -41,7 +41,9 @@ exit	Shut down bot
 ```⚡ Installation
 git clone https://github.com/cmdkill3r/file_rat_downloader.git```
 ```
+
 ```cd remote_file_downloader```
+
 ```
 python main.py
 ```
