@@ -44,9 +44,6 @@ git clone https://github.com/cmdkill3r/file_rat_downloader.git```
 
 ```cd remote_file_downloader```
 
-```
-python main.py
-```
 
 
 Requires Python 3.8+
@@ -56,7 +53,9 @@ No external dependencies needed for safe mode
 🎯 Usage
 
 Launch the bot:
-```python bot.py
+
+```
+python main.py
 ```
 
 
