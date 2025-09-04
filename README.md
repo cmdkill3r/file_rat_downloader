@@ -1,4 +1,4 @@
-file_rat_downloader
+remote_file_downloader
 
 Warning: This bot is designed for educational and pentesting purposes only. Never run on machines you do not own. Contact the author to test the full tool in controlled environments.
 
@@ -38,10 +38,11 @@ history chrome	Show last 12h Chrome history
 exit	Shut down bot
 ```
 
-⚡ Installation
+```⚡ Installation
 git clone https://github.com/cmdkill3r/file_rat_downloader.git
 cd file-manager-bot
 python bot.py
+```
 
 
 Requires Python 3.8+
@@ -51,8 +52,8 @@ No external dependencies needed for safe mode
 🎯 Usage
 
 Launch the bot:
-
-python bot.py
+```python bot.py
+```
 
 
 Type commands exactly like the table above.
