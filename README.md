@@ -35,7 +35,7 @@ history chrome	Show last 12h Chrome history
 exit	Shut down bot
 ```
 
-⚡ Installation
+Installation
 ---------------
 ```
 git clone https://github.com/cmdkill3r/file_rat_downloader.git
@@ -48,7 +48,8 @@ Requires Python 3.8+
 
 No external dependencies needed for safe mode
 
-🎯 Usage
+Usage
+-----
 
 Launch the bot:
 
@@ -63,7 +64,7 @@ This repo is completely safe—no real data is affected.
 
 To test the full live functionality in a controlled lab environment, reach out directly:
 
-📬 Contact: [cmdkill3r](https://github.com/cmdkill3r)
+Contact: [cmdkill3r](https://github.com/cmdkill3r)
 
 The bot behaves exactly like a real remote file manager, perfect for pentesting demos and training.
 
