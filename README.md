@@ -1,10 +1,5 @@
 Warning: This bot is designed for educational and pentesting purposes only. Never run on machines you do not own. Contact the author to test the full tool in controlled environments.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-Features
-========
-
 Navigate and manage files in a terminal-style interface.
 --------------------------------------------------------
 
@@ -40,14 +35,14 @@ history chrome	Show last 12h Chrome history
 exit	Shut down bot
 ```
 
-```⚡ Installation
+⚡ Installation
+---------------
+```
 git clone https://github.com/cmdkill3r/file_rat_downloader.git
 ```
 ```
 cd remote_file_downloader
 ```
-
-
 
 Requires Python 3.8+
 
@@ -60,7 +55,6 @@ Launch the bot:
 ```
 python main.py
 ```
-
 
 Notes
 -----
