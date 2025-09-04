@@ -16,6 +16,7 @@ Execute files (simulated safely).
 Read file contents with cat, head, and tail.
 
 Retrieve last 12h Chrome history across profiles.
+------------------------------------------------
 
 Fully interactive command loop, mimicking a real remote file manager.
 
