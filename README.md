@@ -61,13 +61,8 @@ python main.py
 ```
 
 
-Type commands exactly like the table above.
-
-File uploads/downloads happen in the local downloads folder—fully sandboxed.
-
-Chrome history displays realistic-looking entries for demonstration.
-
-💡 Notes
+Notes
+-----
 
 This repo is completely safe—no real data is affected.
 
@@ -77,13 +72,15 @@ To test the full live functionality in a controlled lab environment, reach out d
 
 The bot behaves exactly like a real remote file manager, perfect for pentesting demos and training.
 
-🤝 Contributing
+Contributing
+------------
 
 Pull requests for new safe commands or enhancements are welcome.
 
 Do not include malicious code—repo is for educational purposes.
 
-🔥 Showcase
+Showcase
+--------
 
 Example commands, screenshots, and outputs included for clarity.
 
