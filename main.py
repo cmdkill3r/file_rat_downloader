@@ -5,8 +5,7 @@ import difflib
 from datetime import datetime, timedelta
 
 # ===== CONFIG =====
-BOT_TOKEN = "YOUR_BOT_TOKEN_HERE"
-CHAT_ID = "YOUR_CHAT_ID_HERE"
+from config import BOT-TOKEN, CHAT_ID
 API_URL = f"https://api.telegram.org/bot{BOT_TOKEN}/"
 
 # ===== WORKING DIRECTORY =====
