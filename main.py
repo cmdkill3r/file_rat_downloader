@@ -5,8 +5,7 @@ import difflib
 from datetime import datetime, timedelta
 
 # ===== CONFIG =====
-from config import BOT-TOKEN, CHAT_ID
-API_URL = f"https://api.telegram.org/bot{BOT_TOKEN}/"
+from config import BOT_TOKEN, CHAT_ID
 
 # ===== WORKING DIRECTORY =====
 ROOT_DIR = os.path.join(os.path.dirname(__file__), "downloads")
